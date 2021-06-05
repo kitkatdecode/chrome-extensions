@@ -1,0 +1,24 @@
+{
+    "manifest_version":2,
+    "name":"Youtube-downloader",
+    "version":"1.0",
+    "description":"My Youtube Video Downloader",
+    "icons":{
+        "128":"assets/icon128.png",
+        "48":"assets/icon48.png",
+        "16":"assets/icon16.png"
+    },
+    "page_action": {
+        "default_title": "Download Youtube Videos",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "downloads",
+        "activeTab",
+        "declarativeContent"
+    ],
+    "background" : {
+        "scripts" : ["background.js"],
+        "persistent" : false
+    }
+}

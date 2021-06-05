@@ -1,0 +1,20 @@
+{
+    "manifest_version":2,
+    "name":"Image Downloader",
+    "version":"1.0",
+    "description":"Downloads all images in the page",
+    "browser_action": {
+        "default_title": "Image downloader",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "downloads",
+        "activeTab",
+        "declarativeContent"
+    ],
+    "background" : {
+        "scripts" : ["background.js"],
+        "persistent" : false
+    }
+}
